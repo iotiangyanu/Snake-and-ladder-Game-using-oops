@@ -45,6 +45,7 @@ This project focuses on clean game logic, modular design, and terminal-based use
 
 ```bash
 git clone https://github.com/iotiangyanu/Snake-and-ladder-Game-using-oops
+cd Snake-and-ladder-Game-using-oops
 cd snake_and_ladder
 python user.py
 
