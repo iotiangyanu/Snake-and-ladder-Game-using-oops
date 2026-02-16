@@ -49,17 +49,15 @@ class Player:
 
                 if score_of_last_played_player == 100:
                     print(f"Hip Hip Hurray! {i} Won the Game 🎉")
-                    game()
+                    return
             
-def game():
-    while True:
-        temp=input("You want to play new Game\n'For YES write Y or For NO write N'")
-        temp = ' '.join(temp.split())
-        if temp=="N" or temp=="n":
-            print("Game Exited.")
-            break
-        elif temp=="y" or temp=="Y":
-            Player.start_the_game()
-        else:
-            print("You Entered invalid command plase enter valid command ")
-game()
+while True:
+    temp=input("You want to play new Game\n'For YES write Y or For NO write N'")
+    temp = ' '.join(temp.split())
+    if temp=="N" or temp=="n":
+        print("Game Exited.")
+        break
+    elif temp=="y" or temp=="Y":
+        Player.start_the_game()
+    else:
+        print("You Entered invalid command plase enter valid command ")
